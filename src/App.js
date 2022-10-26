@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Usuarios from './componentes/Usuarios';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App contenedorApp">
+     <h2 className="text-white pt-4">Listado</h2> 
+      <Usuarios nombre="Gisela" edad="40" localidad="CABA" color="yellow" urlPersonal="https://github.com/GiselaFlores"></Usuarios>
+      <Usuarios nombre="Rodrigo" edad="46" localidad="CABA" color="green" urlPersonal="https://es.wikipedia.org/wiki/Rodrigo_de_la_Serna"></Usuarios>
+      <Usuarios nombre="Laura" edad="35" localidad="" color="orange"  urlPersonal="https://lauraribas.com/recuperar-inspiracion-negocio/"></Usuarios>
     </div>
   );
 }
